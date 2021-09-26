@@ -5,6 +5,10 @@
     text-decoration: none;
 }
 
+::selection{
+    background-color: crimson;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -410,11 +414,43 @@ h3, .zuri{
     margin-top: 10px;
 }
 
+/* project styling start */
+.project .title::before{
+    background: #fff;
+}
+.project .title::after{
+    content: "What i do";
+    background: #111;
+}
+
+.project-img{
+    border-radius: 20px;
+}
+
+.project{
+    background: #111;
+    color: white;
+}
+
+.flex-container{
+    display: flex !important;
+    /* flex-wrap: wrap; */
+    justify-content: center;
+    align-items: center;
+}
+
+.column {
+    margin: 10px;
+}
+
 /* contact section styling */
 .contact .title::after{
     content: "get in touch";
 }
 
+.contact .title::after{
+    content: "get in touch";
+}
 .contact .contact-content .column{
     width: calc(50% - 30px);
 }
@@ -577,9 +613,29 @@ footer span a:hover{
     .max-width{
         padding: 0 50px;
     }
+
+    .project{
+        height: 10%;
+    }
+
+    .flex-container{
+        display: block !important;
+    }
+
+    .contact .contact-content .text{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 1px;
+    }
+
+    .contact .contact-content .left p{
+        text-align: justify;
+        margin-bottom: 20%;
+
+    }
+ 
+        
 }
-
-
 @media(max-width: 947px){
     .menu-btn{
         display: block;
@@ -680,7 +736,6 @@ footer span a:hover{
 
 
 }
-
 
 @media(max-width: 500px){
 
