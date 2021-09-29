@@ -10,7 +10,7 @@
 }
 
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
 
 .max-width{
@@ -392,23 +392,23 @@ section .title::after{
 }
 
 .skills .skills-content .right .html::before{
-    width: 90%;
+    width: 99%;
 }
 .skills .skills-content .right .css::before{
-    width: 60%;
+    width: 80%;
 }
 .skills .skills-content .right .boots::before{
-    width: 90%;
+    width: 99%;
 }
 .skills .skills-content .right .js::before{
+    width: 59%;
+}
+.skills .skills-content .right .React::before{
     width: 30%;
 }
-.skills .skills-content .right .php::before{
+/* .skills .skills-content .right .mysql::before{
     width: 30%;
-}
-.skills .skills-content .right .mysql::before{
-    width: 30%;
-}
+} */
 
 h3, .zuri{
     margin-top: 10px;
@@ -430,6 +430,10 @@ h3, .zuri{
 .project{
     background: #111;
     color: white;
+}
+
+.jjj{
+    display: none;
 }
 
 .flex-container{
@@ -755,6 +759,17 @@ footer span a:hover{
         height: 60%;
         display: none;
     }
+
+    .jjj{
+        display: block;
+    }
+
+    .project-img{
+        border-radius: 20px;
+        margin-top: 25px;
+        /* padding: 20px; */
+    }
+    
 }
 
 @media(max-width: 360px){
